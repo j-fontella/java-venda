@@ -13,6 +13,7 @@ public class MainSistema {
         Scanner scn = new Scanner(System.in);
         ArrayList<Cliente> listaClientes = new ArrayList<>();
         ArrayList<Produto> listaProdutos = new ArrayList<>();
+        System.out.println("Bem-vindo!");
         System.out.println("Quantos clientes vão ser registrados");
         int totalScan = scn.nextInt();
        
