@@ -18,14 +18,19 @@ public class Compra {
     public void adicionarProduto(Produto produto) {
         listaProdutos.add(produto);
     }
-    public void carrinhoCompras() {
+    public String carrinhoCompras() {
         total = 0;
+        String msgCarrinho = "-----Sacola-----\n";
         for (Produto produto : listaProdutos) {
             total += produto.getPreco();
-            System.out.println(produto.getNome());
-            System.out.println(produto.getPreco());
+            msgCarrinho += "Produto: " + produto.getNome();
+            msgCarrinho += "\n";
+            msgCarrinho += "Preço: " + produto.getPreco();
+            msgCarrinho += "\n";
+            
         }
-        System.out.println("Total: R$: " + total);
+        msgCarrinho += "----------------\nTotal: " + total;
+        return msgCarrinho;
     }
    
  

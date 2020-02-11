@@ -108,7 +108,7 @@ public class MainSistema {
                     navegador = -1;
                     break;
                 case 3:
-                    clienteLogado.getCompra().carrinhoCompras();
+                    System.out.println(clienteLogado.getCompra().carrinhoCompras());
             }
         }
  
